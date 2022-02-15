@@ -1,0 +1,98 @@
+@import '../../global.scss';
+
+.navbar {
+    display: flex;
+    align-items: center;
+    position: sticky;
+    padding: 10px;
+    box-sizing: border-box;
+    height: 60px;
+    z-index: 111;
+    top: 0;
+    background: white;
+    color: teal;
+
+    .navbarLeft {
+        flex: 3;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        @include mobile {
+            display: none;
+        }
+
+        a {
+            color: teal;
+            text-decoration: none;
+
+            i {
+                font-size: 25px;
+                margin-right: 10px;
+            }
+        }
+    }
+
+    .navbarCenter {
+        flex: 6;
+
+        .navbarList {
+            padding: 0;
+            margin: 0;
+            list-style: none;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            @media (max-width: 360px) {
+                font-size: 10px;
+            }
+
+
+            .navbarListItem {
+                margin-right: 10px;
+                cursor: pointer;
+            }
+        }
+    }
+
+    .navbarRight {
+        flex: 3;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+
+        img {
+            width: 30px;
+            height: 30px;
+            object-fit: cover;
+            border-radius: 50%;
+            cursor: pointer;
+        }
+
+        .navbarList {
+            padding: 0;
+            margin: 0;
+            list-style: none;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            @media (max-width: 360px) {
+                font-size: 10px;
+            }
+
+            .navbarListItem {
+                margin-right: 10px;
+                cursor: pointer;
+            }
+        }
+
+
+        i {
+            margin-left: 10px;
+            cursor: pointer;
+        }
+    }
+}

@@ -1,0 +1,112 @@
+@import '../../global.scss';
+
+.writeContainer {
+
+    .writeImg {
+        width: 70vw;
+        height: 35vh;
+        object-fit: cover;
+        margin: auto;
+        display: block;
+        margin-top: 30px;
+        border-radius: 10px;
+
+        @include mobile {
+            width: calc(100vw - 30px);
+            margin: 15px;
+        }
+
+    }
+
+    .writeForm {
+        width: 70vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 50px auto 30px;
+        position: relative;
+
+        .writeFormGroup {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 70vw;
+            min-height: 50px;
+
+            @include mobile {
+                width: 100vw;
+            }
+
+
+
+            label {
+                width: 30px;
+                height: 30px;
+                display: flex;
+                border: 1px solid teal;
+                color: teal;
+                justify-content: center;
+                align-items: center;
+                font-size: 20px;
+                border-radius: 50%;
+                margin-right: 5px;
+                cursor: pointer;
+            }  
+            
+            .file {
+                display: none;
+            }
+
+            input {
+                width: 70vw;
+                height: 50px;
+                width: 70vw;
+                height: 50px;
+                font-size: 40px;
+                border: none;
+                margin-left: 20px;
+                color: teal;
+                outline: none;
+            }
+
+            textarea {
+                width: 90%;
+                font-size: 20px;
+                margin-top: 30px;
+                color: #777;
+                outline: none;
+                padding: 10px;
+                min-height: 15vw;
+                border: none;
+
+                @include mobile {
+                    height: 50vw;
+                    margin-bottom: 10px;
+                }
+
+            }
+        }
+
+        .buttonGroup {
+            .buttonSubmit {
+                position: absolute;
+                top: 0;
+                right: 0;
+                border: none;
+                background: teal;
+                color: white;
+                padding: 10px 15px;
+                text-transform: uppercase;
+                border-radius: 10px;
+                font-size: 15px;
+                cursor: pointer;
+
+                @include mobile {
+                    position: relative;
+                }
+
+            }
+        }
+    }
+}

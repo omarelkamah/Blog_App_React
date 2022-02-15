@@ -1,0 +1,125 @@
+@import '../../global.scss';
+
+.settingsContainer {
+    padding: 20px;
+
+
+        h1 {
+            width: 73vw;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-family: 'Lora', serif;
+            color: gray;
+
+            @include mobile {
+                width: 100vw;
+                font-size: 20px;
+                justify-content: center;
+                gap: 3%;
+            }
+
+
+            .deleteAccount {
+                color: tomato;
+                font-size: 15px;
+                cursor: pointer;
+            }
+        }
+
+    .settingsWrapper {
+        display: flex;
+        gap: 3%;
+
+        @include mobile {
+            flex-direction: column;
+        }
+
+
+        .settingsForm {
+            flex: 9;
+            margin-left: 30px;
+
+            @include mobile {
+                margin-left: 0;
+            }
+
+
+            .settingsProfileImg {
+                margin-bottom: 20px;
+                .labelImg {
+                    margin-bottom: 10px;
+                    display: block;
+                    color: #333;
+                    cursor: pointer;
+                }
+
+                .imgContainer {
+                    display: flex;
+                    align-items: center;
+                    gap: 2%;
+
+                    img {
+                        height: 70px;
+                        width: 70px;
+                        border-radius: 20px;
+                        object-fit: cover;
+                    }
+
+                    label {
+                        width: 30px;
+                        height: 30px;
+                        background: teal;
+                        font-size: 18px;
+                        border-radius: 50%;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        color: white;
+                    }
+
+                    .file {
+                        display: none;
+                    }
+                }
+
+            }
+
+            label {
+                margin-bottom: 10px;
+                display: block;
+                color: #333;
+            }
+
+            input {
+                outline: none;
+                width: 75%;
+                border: none;
+                border-bottom: 1px solid #63efef;
+                padding: 8px;
+                color: #333;
+                margin-bottom: 30px;
+            }
+
+            .settingsSubmitButton {
+                display: block;
+                background: teal;
+                color: white;
+                border: none;
+                padding: 10px 20px;
+                font-size: 16px;
+                border-radius: 10px;
+                text-transform: uppercase;
+                letter-spacing: 1px;
+                margin-top: 20px;
+                cursor: pointer;
+
+                @include mobile {
+                    margin-bottom: 30px;
+                }
+
+            }
+
+        }
+    }
+}

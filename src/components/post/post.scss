@@ -1,0 +1,59 @@
+.post {
+    width: 380px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    overflow: hidden;
+
+
+    img {
+        width: 380px;
+        height: 50vh;
+        object-fit: cover;
+
+    }
+
+    .info {
+        .category {
+            text-align: center;
+            color: #be9656;
+            margin-top: 15px;
+
+            span {
+                margin-right: 10px;
+                cursor: pointer;
+            }
+        }
+
+        .title {
+            text-align: center;
+            margin: 10px 0 15px;
+            color: #333;
+            text-transform: capitalize;
+            letter-spacing: 1px;
+            font-family: 'Josefin Sans', Arial, Helvetica, sans-serif;
+            font-size: 20px;
+
+        }
+
+        .date {
+            text-align: center;
+            display: block;
+            font-family: 'Lora', serif;
+            color: #999;
+        }
+    }
+
+    .desc {
+        line-height: 1.7;
+        color: #555;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-line-clamp: 4;
+        -webkit-box-orient: vertical;
+        margin-top: 10px;
+    }
+
+}
